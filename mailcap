@@ -1,0 +1,110 @@
+###############################################################################
+#
+#  MIME types and programs that process those types
+#
+#  Much of this file is generated automatically by the program "update-mime".
+#  Please see the "update-mime" man page for more information.
+#
+#  Users can add their own rules if they wish by creating a ".mailcap"
+#  file in their home directory.  Entries included there will take
+#  precedence over those listed here.
+#
+###############################################################################
+
+
+###############################################################################
+#
+#  User section follows:  Any entries included in this section will take
+#  precedence over those created by "update-mime".  DO NOT CHANGE the
+#  "User Section Begins" and "User Section Ends" lines, or anything outside
+#  of this section!
+#
+
+# ----- User Section Begins ----- #
+# -----  User Section Ends  ----- #
+
+###############################################################################
+
+text/plain; less '%s'; needsterminal
+application/vnd.sun.xml.calc; openoffice '%s'; edit=openoffice '%s'; test=test "$DISPLAY" != "" ; description="OpenOffice.org Spreadsheet"; nametemplate=%.sxc
+application/vnd.sun.xml.calc.template; openoffice '%s'; edit=openoffice '%s'; test=test "$DISPLAY" != "" ; description="OpenOffice.org Spreadsheet Template"; nametemplate=%.stc
+application/vnd.sun.xml.draw; openoffice '%s'; edit=openoffice '%s'; test=test "$DISPLAY" != "" ; description="OpenOffice.org Drawing"; nametemplate=%.sxd
+application/vnd.sun.xml.draw.template; openoffice '%s'; edit=openoffice '%s'; test=test "$DISPLAY" != "" ; description="OpenOffice.org Drawing Template"; nametemplate=%.std
+application/vnd.sun.xml.impress; openoffice '%s'; edit=openoffice '%s'; test=test "$DISPLAY" != "" ; description="OpenOffice.org Presentation"; nametemplate=%.sxi
+application/vnd.sun.xml.impress.template; openoffice '%s'; edit=openoffice '%s'; test=test "$DISPLAY" != "" ; description="OpenOffice.org Presentation Template"; nametemplate=%.sti
+application/vnd.sun.xml.writer; openoffice '%s'; edit=openoffice '%s'; test=test "$DISPLAY" != "" ; description="OpenOffice.org Text Document"; nametemplate=%.sxw
+application/vnd.sun.xml.writer.global; openoffice '%s'; edit=openoffice '%s'; test=test "$DISPLAY" != "" ; description="OpenOffice.org Master Document"; nametemplate=%.sxg
+application/vnd.sun.xml.writer.math; openoffice '%s'; edit=openoffice '%s'; test=test "$DISPLAY" != "" ; description="OpenOffice.org Maths Document"
+application/vnd.sun.xml.writer.template; openoffice '%s'; edit=openoffice '%s'; test=test "$DISPLAY" != "" ; description="OpenOffice.org Text Document Template"; nametemplate=%.stw
+application/x-chm; /usr/bin/xchm '%s'; test=test -n "$DISPLAY"; description="Compiled HTML Help Format"; nametemplate=%s.chm
+application/pdf; /usr/bin/xpdf '%s'; test=test "$DISPLAY" != ""; description=Portable Document Format; nametemplate=%s.pdf
+application/x-arj; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY" -a -e /usr/bin/arj
+application/x-bzip; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+application/x-bzip-compressed-tar; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY" -a -e /usr/bin/bzip2
+application/x-compress; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+application/x-compressed-tar; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+application/x-gzip; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+application/x-java-archive; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+application/x-lha; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY" -a -e /usr/bin/lha
+application/x-lzop; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY" -a -e /bin/lzop
+application/x-lzop-compressed-tar; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY" -a -e /bin/lzop
+application/x-rar; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY" -a -e /usr/bin/unrar -o -e /usr/bin/rar
+application/x-rar-compressed; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY" -a -e /usr/bin/unrar -o -e /usr/bin/rar
+application/x-stuffit; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+application/x-tar; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY"
+application/zip; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY" -a -e /usr/bin/unzip
+application/x-zoo; /usr/bin/file-roller '%s'; test=test -n "$DISPLAY" -a -e /usr/bin/zoo
+application/ghostview; gnome-gv '%s'; description="postscript document"; test=test "$DISPLAY" != ""
+application/postscript; gnome-gv '%s'; description="postscript document"; test=test "$DISPLAY" != ""
+application/x-troff-man; /usr/bin/nroff -mandoc -Tlatin1; copiousoutput; print=/usr/bin/nroff -mandoc -Tlatin1 | print text/plain:-
+text/html; /usr/bin/mozilla-firefox '%s'; description=HTML Text; test=test -n "$DISPLAY";  nametemplate=%s.html
+text/xml; /usr/bin/mozilla-firefox '%s'; description=XML Text; test=test -n "$DISPLAY";  nametemplate=%s.xml
+application/x-staroffice; openoffice '%s'; edit=openoffice '%s'; test=test "$DISPLAY" != "" ; description="StarOffice 5.0"
+application/vnd.stardivision.calc; openoffice '%s';edit=openoffice '%s';test=test "$DISPLAY" != "" ;description="StarCalc 5.0"; nametemplate=%.sdc
+application/vnd.stardivision.chart; openoffice '%s'; edit=openoffice '%s'; test=test "$DISPLAY" != "" ; description="StarChart 5.0"; nametemplate=%.sds
+application/vnd.stardivision.draw; openoffice '%s'; edit=openoffice '%s'; test=test "$DISPLAY" != "" ; description="StarDraw 5.0"; nametemplate=%.sda
+application/vnd.stardivision.impress; openoffice '%s'; edit=openoffice '%s'; test=test "$DISPLAY" != "" ; description="StarImpress 5.0"; nametemplate=%.sdd
+application/vnd.stardivision.math; openoffice '%s'; edit=openoffice '%s'; test=test "$DISPLAY" != "" ; description="StarMath 5.0"; nametemplate=%.sdf
+application/vnd.stardivision.writer-global; openoffice '%s'; edit=openoffice '%s'; test=test "$DISPLAY" != "" ; description="StarWriter 5.0 Master Document"; nametemplate=%.sgl
+application/vnd.stardivision.writer; openoffice '%s'; edit=openoffice '%s'; test=test "$DISPLAY" != "" ; description="StarWriter 5.0"; nametemplate=%.sdw
+application/x-ogg; rhythmbox '%s'; description="Ogg Vorbis audio"; test=test -n "$DISPLAY"; nametemplate=%s.ogg
+application/ogg; rhythmbox '%s'; description="Ogg Media"; test=test -n "$DISPLAY"
+audio/x-mp3; rhythmbox '%s'; description="MP3 audio"; test=test -n "$DISPLAY"; nametemplate=%s.mp3
+audio/x-scpls; rhythmbox '%s'; description="MP3 ShoutCast playlist"; test=test -n "$DISPLAY"; nametemplate=%s.pls
+audio/x-mpeg; rhythmbox '%s'; description="MP3 audio"; test=test -n "$DISPLAY"
+audio/mpeg; rhythmbox '%s'; description="MP3 audio"; test=test -n "$DISPLAY"
+audio/x-mpegurl; rhythmbox '%s'; description="Playlist"; test=test -n "$DISPLAY"; nametemplate=%s.m3u
+application/x-flac; rhythmbox '%s'; description="FLAC audio"; test=test -n "$DISPLAY"; nametemplate=%s.flac
+application/x-tar; /bin/tar tvf -; print=/bin/tar tvf - | print text/plain:-; copiousoutput
+application/x-gtar; /bin/tar tvzf -; print=/bin/tar tvzf - | print text/plain:-; copiousoutput
+text/plain; more '%s'; needsterminal
+text/html; /usr/bin/elinks '%s'; needsterminal; description=HTML Text; nametemplate=%s.html
+text/plain; view '%s'; edit=vim '%s'; compose=vim '%s'; needsterminal
+text/plain; gview -f '%s'; edit=gvim -f '%s'; compose=gvim -f '%s'; test=test "$DISPLAY" != ""
+text/html; /usr/bin/w3m -T text/html '%s'; needsterminal; description=HTML Text; nametemplate=%s.html
+text/html; /usr/bin/elinks -dump '%s'; copiousoutput; description=HTML Text; nametemplate=%s.html
+application/msword; openoffice '%s'; edit=openoffice '%s'; test=test "$DISPLAY" != ""; nametemplate=%s.doc; description="Microsoft Word Document"
+application/msexcel; openoffice '%s'; edit=openoffice '%s'; test=test "$DISPLAY" != ""; nametemplate=%s.xls; description="Microsoft Excel Document"
+application/mspowerpoint; openoffice '%s'; edit=openoffice '%s'; test=test "$DISPLAY" != ""; nametemplate=%s.ppt; description="Microsoft PowerPoint Document"
+application/vnd.ms-word; openoffice '%s'; edit=openoffice '%s'; test=test "$DISPLAY" != ""; nametemplate=%s.doc; description="Microsoft Word Document"
+application/vnd.ms-excel; openoffice '%s'; edit=openoffice '%s'; test=test "$DISPLAY" != ""; nametemplate=%s.xls; description="Microsoft Excel Document"
+application/vnd.ms-powerpoint; openoffice '%s'; edit=openoffice '%s'; test=test "$DISPLAY" != ""; nametemplate=%s.ppt; description="Microsoft PowerPoint Document"
+application/rtf; openoffice '%s'; edit=openoffice '%s'; test=test "$DISPLAY" != ""; nametemplate=%s.rtf; description="Rich Text Format"
+application/x-msword; openoffice '%s'; edit=openoffice '%s'; test=test "$DISPLAY" != ""; nametemplate=%s.doc; description="Microsoft Word Document"
+application/x-msexcel; openoffice '%s'; edit=openoffice '%s'; test=test "$DISPLAY" != ""; nametemplate=%s.xls; description="Microsoft Excel Document"
+application/x-mspowerpoint; openoffice '%s'; edit=openoffice '%s'; test=test "$DISPLAY" != ""; nametemplate=%s.ppt; description="Microsoft PowerPoint Document"
+application/wordperfect; openoffice '%s'; edit=openoffice '%s'; test=test "$DISPLAY" != ""; nametemplate=%s.wpd; description="WordPerfect Document"
+application/wordperfect5.1; openoffice '%s'; edit=openoffice '%s'; test=test "$DISPLAY" != ""; nametemplate=%s.wpd; description="WordPerfect Document"
+application/vnd.wordperfect; openoffice '%s'; edit=openoffice '%s'; test=test "$DISPLAY" != ""; nametemplate=%s.wpd; description="WordPerfect Document"
+text/html; /usr/bin/w3m -dump -T text/html '%s'; copiousoutput; description=HTML Text; nametemplate=%s.html
+text/html; /usr/bin/html2text '%s'; copiousoutput; description=HTML Text
+image/png;  /usr/bin/mozilla-firefox '%s'; description=PNG Image; test=test -n "$DISPLAY";  nametemplate=%s.png
+image/jpeg;  /usr/bin/mozilla-firefox '%s'; description=JPEG Image; test=test -n "$DISPLAY";  nametemplate=%s.jpeg
+image/gif;  /usr/bin/mozilla-firefox '%s'; description=GIF Image; test=test -n "$DISPLAY";  nametemplate=%s.gif
+text/*; less '%s'; needsterminal
+text/*; view '%s'; edit=vim '%s'; compose=vim '%s'; needsterminal
+text/*; gview -f '%s'; edit=gvim -f '%s'; compose=gvim -f '%s'; test=test "$DISPLAY" != ""
+text/html; /usr/bin/sensible-browser '%s'; description=HTML Text; nametemplate=%s.html
+text/*; more '%s'; needsterminal
+application/x-debian-package; /usr/lib/mime/debian-view '%s'; needsterminal; description=Debian GNU/Linux Package; nametemplate=%s.deb
+audio/basic; /usr/lib/mime/playaudio '%s'; description=Basic uLaw Audio; nametemplate=%s.au
